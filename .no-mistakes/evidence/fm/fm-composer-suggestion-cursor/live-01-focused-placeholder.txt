@@ -1,0 +1,5 @@
+=== Focused idle placeholder (Herdr, attached viewer) ===
+--- composer row (herdr pane read --format ansi, cat -v) ---
+M-bM-^]M-/M-BM- ^[[0m^[[2mTry "refactor fm-branch-supervision.ts"^[[0m^M
+HEAD verdict: empty
+BASE (fb75c1f) verdict: empty

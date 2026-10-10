@@ -1,0 +1,5 @@
+=== Typed hola in live composer ===
+--- composer row (herdr pane read --format ansi, cat -v) ---
+M-bM-^]M-/M-BM- hola^M
+HEAD verdict: pending
+BASE (fb75c1f) verdict: pending

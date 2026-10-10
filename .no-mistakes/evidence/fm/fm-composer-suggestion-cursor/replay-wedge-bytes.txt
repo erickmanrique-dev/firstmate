@@ -1,0 +1,12 @@
+PASS | focused suggestion (wedge frame)                           | expect empty   | HEAD empty   | BASE pending | row: ^[[0m^[[38;2;153;153;153mM-bM-^]M-/M-BM-  ^[[0m^[[7mh^[[0m^[[2mola ya volvM-CM--, cM-CM-3mo va todo^[[0m
+PASS | focused suggestion, other wording                          | expect empty   | HEAD empty   | BASE pending | row: ^[[0m^[[38;2;153;153;153mM-bM-^]M-/M-BM-  ^[[0m^[[7mR^[[0m^[[2mun the tests again^[[0m
+PASS | focused suggestion, multibyte first char                   | expect empty   | HEAD empty   | BASE pending | row: ^[[0m^[[38;2;153;153;153mM-bM-^]M-/M-BM-  ^[[0m^[[7mM-BM-?^[[0m^[[2mquM-CM-) sigue?^[[0m
+PASS | focused suggestion, SGR 27 inverse reset                   | expect empty   | HEAD empty   | BASE pending | row: ^[[0m^[[38;2;153;153;153mM-bM-^]M-/M-BM-  ^[[0m^[[7mh^[[27m^[[2mola ya volvM-CM--^[[0m
+PASS | empty composer, inverse SPACE cursor                       | expect empty   | HEAD empty   | BASE empty   | row: ^[[0m^[[38;2;153;153;153mM-bM-^]M-/M-BM-  ^[[0m^[[7m ^[[0m
+PASS | unfocused all-dim suggestion                               | expect empty   | HEAD empty   | BASE empty   | row: ^[[0m^[[38;2;153;153;153mM-bM-^]M-/M-BM-  ^[[0m^[[2mhola ya volvM-CM--, cM-CM-3mo va todo^[[0m
+PASS | typed hola + inverse SPACE cursor                          | expect pending | HEAD pending | BASE pending | row: ^[[0m^[[38;2;153;153;153mM-bM-^]M-/M-BM-  ^[[0mhola^[[7m ^[[0m
+PASS | typed text, cursor moved onto last letter                  | expect pending | HEAD pending | BASE pending | row: ^[[0m^[[38;2;153;153;153mM-bM-^]M-/M-BM-  ^[[0mhol^[[7ma^[[0m
+PASS | typed prefix then inverse letter + dim                     | expect pending | HEAD pending | BASE pending | row: ^[[0m^[[38;2;153;153;153mM-bM-^]M-/M-BM-  ^[[0mho^[[7ml^[[0m^[[2ma^[[0m
+PASS | two inverse chars + dim (not one cursor)                   | expect pending | HEAD pending | BASE pending | row: ^[[0m^[[38;2;153;153;153mM-bM-^]M-/M-BM-  ^[[0m^[[7mho^[[0m^[[2mla^[[0m
+PASS | inverse letter with dim INSIDE inverse run                 | expect pending | HEAD pending | BASE pending | row: ^[[0m^[[38;2;153;153;153mM-bM-^]M-/M-BM-  ^[[0m^[[7mh^[[2mola^[[0m
+PASS | typed text after dim suggestion remainder                  | expect pending | HEAD pending | BASE pending | row: ^[[0m^[[38;2;153;153;153mM-bM-^]M-/M-BM-  ^[[0m^[[7mh^[[0m^[[2mola^[[0m typed
